@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px;
+}
+/*------------------
+    Header styles
+-------------------*/
+header{
+    background-color:#2D25A0;
+    margin-bottom: 40px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    width: 1143px;
+    height: 44px;
+    margin: 30px 0;
+}
+.menu li{
+    list-style: none;
+    padding-left: 25px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    margin: 67px 140px 167px 156px;
+}
+.top-banner{
+    display: flex;
+    width: 1143px;
+}
+.banner-content{
+    width: 485px;
+    height: 230px;
+    margin-right: 102px;
+}
+.banner-title{
+    font-size: 60px;
+    color: #fff;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.btn{
+    padding: 10px 24px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-bottom: 169px;
+}
+.btn:hover{
+    background-color: #2D25A0;
+    cursor: pointer;
+}
+.banner{
+    width: 556px;
+    height: 438px;
+    margin-bottom: 86px;
+    transition:transform 1s ease-in-out 1s;
+}
+.banner img{
+    width: 556px;
+    height: 438px;
+}
+.banner:hover{
+    transform: skew(-30deg);
+}
+
+/*------------------------------
+      Players section style
+-------------------------------*/
+
+.players-container{
+    display: flex;
+    justify-content: center;
+}
+.top-players{
+    width: 1050px;
+    margin: 0px 0px 165px 0;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+
+}
+.player{
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-name{
+    margin-top: 16px;
+}
+.player-info{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*---------------------------------
+     review-seasion style
+----------------------------------*/
+
+.review-seasion-container{
+    display: flex;
+    justify-content: center;
+
+}
+.review-seasion{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.content{
+    width: 45%;
+}
+.review-seasion-title{
+     margin: 15px 0;
+}
+.review-seasion-detaile{
+      margin-top: 20px;
+}
+.match-clip{
+    width: 50%;
+}
+.match-clip video{
+    width: 100%;
+}
+
+/*-------------------------
+    Footer style
+--------------------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 158px 0 63px 0;
+
+}
+.footer-container{
+    width: 484px;
+    height: 213px;
+    text-align: center;
+}
+
+.logo img{
+    height: 67px;
+}
+.social-icon-container{
+    margin: 20px 0;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    
+}
+.social-icon li{
+    padding-left: 14px;
+    list-style: none;
+}
+.social-icon li a{
+    text-decoration: none;
+}
+.fab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: #ddd;
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+    
+.footer-des{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
