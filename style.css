@@ -7,13 +7,12 @@ body{
     font-family: 'Poppins', sans-serif;
     line-height: 28px;
 }
-/*------------------
-    Header styles
--------------------*/
+/*-------------------------------------------
+    Navigation & banner section styles
+---------------------------------------------*/
 header{
     background-color:#2D25A0;
-    margin-bottom: 40px;
-
+    margin-bottom: 10px;
 }
 
 nav{
@@ -29,15 +28,16 @@ nav{
 }
 .menu li{
     list-style: none;
-    padding-left: 25px;
+    padding: 0 20px;
 }
 .menu li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 500;
 }
 .menu li a:hover{
-    color: red;
+    color:#E02C6D;
     text-decoration: underline;
 }
 
@@ -54,21 +54,26 @@ nav{
     width: 485px;
     height: 230px;
     margin-right: 102px;
+   
+
 }
 .banner-title{
     font-size: 60px;
     color: #fff;
     line-height: 80px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 }
 .btn{
-    padding: 10px 24px;
+    padding: 15px 30px;
     text-decoration: none;
     background-color: #E02C6D;
     color: #fff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
-    margin-bottom: 169px;
+    border-radius: 15px;
+}
+.btn i{
+    margin-left: 5px;
 }
 .btn:hover{
     background-color: #2D25A0;
@@ -78,11 +83,10 @@ nav{
     width: 556px;
     height: 438px;
     margin-bottom: 86px;
-    transition:transform 1s ease-in-out 1s;
+    transition:transform 2s ease-in-out;
 }
 .banner img{
-    width: 556px;
-    height: 438px;
+    width:100%
 }
 .banner:hover{
     transform: skew(-30deg);
@@ -95,10 +99,10 @@ nav{
 .players-container{
     display: flex;
     justify-content: center;
+    padding: 15px 0;
 }
 .top-players{
     width: 1050px;
-    margin: 0px 0px 165px 0;
 }
 .players{
     display: grid;
@@ -133,29 +137,38 @@ nav{
 .review-seasion-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin:50px 0 ;
+    padding: 20px 0;
 
 }
 .review-seasion{
     display: flex;
-    justify-content: space-between;
     width: 1100px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    border-radius: 5px;
 }
 .content{
-    width: 45%;
+    width: 50%;
+    margin-right: 30px;
 }
 .review-seasion-title{
      margin: 15px 0;
+     color: #333;
+     font-size: 30px;
 }
 .review-seasion-detaile{
       margin-top: 20px;
 }
 .match-clip{
     width: 50%;
+    height: 261px;
+    border: 1px solid#ddd;
 }
 .match-clip video{
     width: 100%;
+    height: 100%;
 }
 
 /*-------------------------
@@ -165,17 +178,19 @@ nav{
 footer{
     display: flex;
     justify-content: center;
-    margin: 158px 0 63px 0;
+    margin-bottom: 63px;
 
 }
 .footer-container{
-    width: 484px;
-    height: 213px;
+    width: 500px;
+    height: 240px;
     text-align: center;
+
 }
 
 .logo img{
-    height: 67px;
+    height: 110px;
+    width: 100%;
 }
 .social-icon-container{
     margin: 20px 0;
@@ -203,9 +218,88 @@ footer{
     border: 1px solid gray;
     border-radius: 50%;
 }
+.fab:hover{
+    color: blue;
+    cursor: pointer;
+}
     
 .footer-des{
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
 }
+
+/*--------------------------
+      Media queries
+----------------------------*/
+
+/*------------------------
+     Mobile devices
+--------------------------*/
+
+@media only screen and (max-width:688px){
+    nav{
+        margin: 10px;
+    }
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .menu li{
+        padding: 10px 0px;
+    }
+
+    .banner-container{
+        margin: 10px;
+    }
+    .top-banner{
+        flex-direction: column;
+        width: auto;
+        
+    }
+    .banner-content{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 30px;
+    
+    }
+    .banner-title{
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .banner{
+        width:100%;
+        margin:10px;
+        margin-top: 15px;
+    
+    }
+    .banner img{
+        width:80%
+    }
+    
+    .top-players{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .review-seasion{
+        flex-direction: column;
+        width:100%;
+    }
+    .content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .match-clip{
+        width: 100%;
+        
+    }
+ }
